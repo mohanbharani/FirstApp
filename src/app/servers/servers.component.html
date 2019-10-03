@@ -1,0 +1,15 @@
+<p>servers works!</p>
+
+<input 
+    type="text" 
+    class='form-control'
+    (input)="onUpdateServer($event)">
+
+<h3>{{serverName}}</h3>
+
+<button class="btn btn-primary" (click)="onCreateServer()" [disabled]="!allowEnable">{{serverNewStatus}}</button>
+
+<h2>{{ serverStatus }} - {{ serverNewStatus }}</h2>
+<app-server></app-server>
+
+ng 
